@@ -5,83 +5,110 @@ import { ChevronLeft, ChevronRight, ExternalLink, Github, Shield, Users, Code, C
 const projectsData = [
   {
     id: 1,
-    title: "SecureLinkVPN",
-    subtitle: "A Lightweight Peer-to-Peer Secure Communication System",
-    description: "Custom-built, lightweight system designed to emulate Virtual Private Network (VPN) functionality, enabling secure peer-to-peer communication through a trusted server. Features hybrid cryptography with RSA for key exchange and AES-256-CBC for data encryption.",
-    technologies: ["C++", "OpenSSL", "RSA", "AES-256-CBC", "SHA256", "TCP", "Ngrok"],
-    features: [
-      "Lightweight Design with minimal complexity",
-      "Hybrid Cryptography (RSA + AES-256-CBC)",
-      "Server-Mediated P2P Communication",
-      "Integrity Assurance with SHA256",
-      "End-to-end encryption with privacy focus"
-    ],
-    domain: "Network Security",
+    title: "Flight Reservation System",
+subtitle: "Scalable Microservices-Based Airline Booking Platform",
+description: "A distributed flight reservation system built using microservices architecture, enabling users to search flights, calculate fares, and complete bookings through independent, loosely coupled services. The system leverages service discovery, centralized configuration, asynchronous messaging, and caching to ensure scalability, reliability, and low-latency performance.",
+technologies: [
+  "Java",
+  "Spring Boot",
+  "Spring Cloud",
+  "REST APIs",
+  "RabbitMQ",
+  "Redis",
+  "Eureka Service Discovery",
+  "API Gateway",
+  "Config Server"
+],
+features: [
+  "Microservices-based architecture for flight search, fare calculation, and booking",
+  "API Gateway for centralized routing and request handling",
+  "Service discovery using Eureka for dynamic service registration",
+  "Centralized configuration management with Spring Cloud Config Server",
+  "Asynchronous booking and notification processing using RabbitMQ"
+],
+ domain: "Full-Stack Development | Distributed Systems",
     icon: Shield,
     gradient: "from-blue-600 to-purple-600",
-    imageUrl: "vpn.png",
+    imageUrl: "fight.jpg",
     demoUrl: "#",
-    githubUrl: "https://github.com/Tejaakshaykumar/SecureLinkVPN "
+    githubUrl: "https://github.com/kishorsamruddhi/flight-booking-system"
   },
   {
     id: 2,
-    title: "EmployEase",
-    subtitle: "Platform for both job seekers and employers",
-    description: "User-friendly web application designed to streamline the job search and recruitment process. Provides a comprehensive platform where job seekers can find and apply for jobs, while employers can post jobs and manage applications efficiently.",
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Firebase", "Bootstrap", "Netlify", "Render"],
-    features: [
-      "User registration and secure login",
-      "Separate dashboards for employers and job seekers",
-      "Job posting and application management",
-      "Real-time notifications system",
-      "Secure data storage with Firebase"
-    ],
-    domain: "Web Development",
+    title: "SportsWear Platform",
+    subtitle: "End-to-End Sportswear E-Commerce Platform",
+description: "A full-stack sportswear e-commerce web application that enables users to browse products, manage cart and wishlist, and place orders seamlessly. The platform supports secure JWT-based authentication, role-based access control, address management, order history, coupon application, and integrated Razorpay payments. Deployed using modern cloud hosting with Vercel for the frontend and Heroku for the backend.",
+technologies: ["React.js", "Redux", "REST APIs", "Node.js", "Express.js", "MongoDB", "JWT Authentication", "Razorpay"],
+features: [
+  "User registration and secure JWT-based authentication",
+  "Product browsing with cart and wishlist management",
+  "Role-based access for users and administrators",
+  "Address management, order history, and coupon support",
+  "Secure online payments with Razorpay integration"
+],
+    domain: "Fullstack Development",
     icon: Users,
     gradient: "from-green-600 to-blue-600",
-    imageUrl: "employease.png",
-    demoUrl: "https://employease.netlify.app/",
-    githubUrl: "https://github.com/Tejaakshaykumar/EmployEase"
+    imageUrl: "nike.png",
+    demoUrl: "https://nike-clone-468u37uxv-samruddhis-projects-443f0d6e.vercel.app/",
+    githubUrl: "https://github.com/kishorsamruddhi/Nike-Clone"
   },
   {
     id: 3,
-    title: "MakeMyVita",
-    subtitle: "A Resume Builder Website",
-    description: "User-friendly web application designed to help users create professional resumes quickly and efficiently. Features multiple templates, real-time preview, and export options in various formats including PDF, JPG, PNG, and DOCX.",
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Firebase", "Bootstrap", "Netlify", "Render"],
-    features: [
-      "Google Authentication integration",
-      "Multiple professional resume templates",
-      "Real-time preview with live updates",
-      "Font and color customization options",
-      "Export in multiple formats (PDF, JPG, PNG, DOCX)"
-    ],
-    domain: "Web Development",
+   title: "Mera Bestie",
+subtitle: "Seller-to-Consumer E-Commerce Platform",
+description: "A full-stack e-commerce web application that enables sellers to list and manage products while allowing buyers to browse, review, and purchase items through a clean, user-friendly interface. The platform streamlines order management and transaction workflows, resulting in faster processing times and an improved shopping experience.",
+technologies: [
+  "React.js",
+  "Material-UI",
+  "Firebase Authentication",
+  "Firebase Firestore",
+  "Firebase Storage",
+  "Firebase Hosting"
+],
+features: [
+  "Seller product listing and management dashboard",
+  "Buyer-facing product browsing with reviews and ratings",
+  "Secure user authentication and role-based access",
+  "Order management with optimized processing workflows",
+  "Responsive UI for seamless experience across devices"
+],   domain: "Web Development",
     icon: Code,
     gradient: "from-purple-600 to-pink-600",
-    imageUrl: "makemyvita.png",
-    demoUrl: "https://makemyvita.netlify.app/",
-    githubUrl: "https://github.com/Tejaakshaykumar/MakeMyVita-Resume-Builder-Website"
+    imageUrl: "merabestie.png",
+    demoUrl: "https://merabestie-khaki.vercel.app/",
+    githubUrl: "https://github.com/kishorsamruddhi/EcommerceWebsite"
   },
   {
     id: 4,
-    title: "Attendance Management System",
-    subtitle: "Cloud-based School Attendance Solution",
-    description: "Web-based application designed to streamline attendance recording and management in schools. Administrators can manage schools, classes, sections, students, and teachers, while teachers can efficiently mark attendance and generate reports.",
-    technologies: ["HTML", "CSS", "PHP", "phpMyAdmin", "SQL", "AWS S3", "AWS IAM", "AWS EC2"],
-    features: [
-      "Administrator school management system",
-      "Teacher login and student management",
-      "Attendance marking and reporting",
-      "Student search functionality",
-      "AWS cloud infrastructure integration"
-    ],
-    domain: "Cloud Computing",
+    title: "High-Concurrency Order Processing System",
+subtitle: "Distributed Pre-Checkout Reservation & Inventory Management System",
+description: "A high-performance backend system designed to handle extreme traffic during flash-sale events. The platform ensures safe inventory allocation, prevents overselling, and delivers sub-100ms responses by leveraging Redis atomic operations, asynchronous messaging, and scalable microservice-based APIs.",
+technologies: [
+  "Java",
+  "Spring Boot",
+  "Redis",
+  "RabbitMQ",
+  "MyBatis",
+  "Thymeleaf",
+  "Nginx",
+  "REST APIs",
+  "Distributed Systems"
+],
+features: 
+  [
+  "Pre-checkout inventory reservation using Redis atomic operations",
+  "Overselling prevention under heavy concurrent traffic",
+  "Asynchronous order processing with RabbitMQ",
+  "High-throughput REST APIs built with Spring Boot",
+  "Scalable architecture optimized for flash-sale traffic bursts"
+],
+domain: "High-Concurrency Systems",
     icon: Cloud,
     gradient: "from-orange-600 to-red-600",
-    imageUrl: "attendance_management.png",
+    imageUrl: "high.png",
     demoUrl: "#",
-    githubUrl: "https://github.com/Tejaakshaykumar/Attendance-Management-System-Website"
+    githubUrl: "https://github.com/kishorsamruddhi/High-Concurrency-Order-Processing-System"
   }
 ];
 
