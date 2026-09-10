@@ -109,6 +109,65 @@ domain: "High-Concurrency Systems",
     imageUrl: "high.png",
     demoUrl: "#",
     githubUrl: "https://github.com/kishorsamruddhi/High-Concurrency-Order-Processing-System"
+  },
+  {
+    id: 5,
+    title: "Sarkar Rental Vehicle",
+    subtitle: "Vehicle Rental Agency Platform | Jun 2026 - Aug 2026",
+    description: "A full-stack vehicle rental platform built from scratch with vehicle listings, availability checks, end-to-end booking flows, secure authentication, OTP verification, booking emails, and Razorpay test-mode payments.",
+    technologies: ["MERN Stack", "Zustand", "REST APIs", "JWT Authentication", "SMTP", "Razorpay"],
+    features: [
+      "MongoDB schemas for vehicles, bookings, and users",
+      "Zustand state management for a scalable client architecture",
+      "JWT authentication with HTTP-only cookies and password hashing",
+      "SMTP workflows for booking confirmations and OTP verification",
+      "Razorpay payment order creation and verification"
+    ],
+    domain: "MERN Stack Development",
+    icon: Users,
+    gradient: "from-cyan-600 to-blue-600",
+    imageUrl: "sarkarrentalvehicl.png",
+    demoUrl: "https://sarkar-rental-vehicle.vercel.app/",
+    githubUrl: "#"
+  },
+  {
+    id: 6,
+    title: "Digi Shiksha",
+    subtitle: "Learning Management System | Oct 2024 - Dec 2024",
+    description: "A full-stack LMS with role-based access for admins and users, course enrollment and progress tracking, certificate generation, and an agentic AI assistant for personalized learning support.",
+    technologies: ["MERN Stack", "Agentic AI", "OpenAI API", "Tool Calling", "Prompt Engineering", "JWT Authentication"],
+    features: [
+      "Secure login and role-based authentication for admins and users",
+      "Agentic AI assistant for course recommendations and learner queries",
+      "Course enrollment, progress tracking, and certificate generation",
+      "Admin panel for managing courses, users, and learning content",
+      "Designed to support 20-30 users and 10+ courses"
+    ],
+    domain: "MERN Stack Development",
+    icon: Code,
+    gradient: "from-emerald-600 to-teal-600",
+    imageUrl: "lms.png",
+    demoUrl: "https://learning-management-azure.vercel.app/",
+    githubUrl: "#"
+  },
+  {
+    id: 7,
+    title: "Manadhaar",
+    subtitle: "Marathi Literature Sharing Platform",
+    description: "A platform for sharing poems and Shayari that celebrates Marathi literature, helping preserve the language's literary heritage and connect readers with meaningful creative works.",
+    technologies: ["React.js", "JavaScript", "Responsive UI", "Vercel"],
+    features: [
+      "Shared poems and Shayari for Marathi literature lovers",
+      "A digital space dedicated to preserving Marathi literary culture",
+      "Accessible reading experience across devices",
+      "Production deployment on Vercel"
+    ],
+    domain: "Web Development",
+    icon: Shield,
+    gradient: "from-rose-600 to-orange-600",
+    imageUrl: "manadhar.png",
+    demoUrl: "https://manadhar.vercel.app/",
+    githubUrl: "#"
   }
 ];
 
@@ -178,11 +237,13 @@ const Projects: React.FC = () => {
                 {/* Project Image */}
                 <div className="relative h-64 md:h-110 overflow-hidden">
                   <div className={`absolute inset-0 `} />
-                  <img
-                    src={current.imageUrl}
-                    alt={current.title}
-                    className="w-full h-full object-cover"
-                  />
+                  {current.imageUrl && (
+                    <img
+                      src={current.imageUrl}
+                      alt={current.title}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
                   <div className="absolute inset-0 bg-black/30" />
                   
                   {/* Project Icon */}
